@@ -4,7 +4,7 @@ from discord.ext import commands
 from config import settings
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=settings['prefix'], intents=intents)
+bot = commands.Bot(command_prefix=settings['!'], intents=intents)
 openai.api_key = "YOUR OPENAI KEY HERE"
 conversation_history = []
 
